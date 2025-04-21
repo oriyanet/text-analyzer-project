@@ -1,0 +1,35 @@
+# Text Analyzer / Oriya Netzer
+
+## Extensions:
+
+* Task 8 - Checking Fixed-Length Paths Between People.
+
+* Task 9 - Grouping Sentences by Shared Words.
+
+##Explanation
+
+Task 8 :
+This extension is based on the graph built in Task 6 and aims to determine whether two people are connected in the graph within a path of up to K steps.
+The implementation was done using a recursive search that explores all possible paths up to the defined depth, utilizing Class 7 (IndirectConnections).
+This extension is useful for analyzing social networks, identifying indirect connections between entities, and detecting relationships in complex systems.
+
+Task 9 :
+This extension identifies groups of sentences that share common words based on a predefined threshold (T).
+To achieve this, a graph was constructed where each node represents a sentence, and edges exist between nodes if the number of shared words between them meets or exceeds the threshold.
+The grouping process was performed using DFS, which detects connected components in the graph and efficiently clusters the sentences.
+This approach helps in text analysis by identifying content groups with common links.
+
+
+## Design
+
+* Task 4 - Optimized Search with Dictionary
+We used a dictionary (hash map) to store K-sequences, enabling O(1) lookup time instead of searching through lists.
+This significantly improved the efficiency of our search engine.
+
+* Task 8 - Identifying Indirect Connections
+Built on the graph from Task 6, this task checks if two people are connected within K steps.
+We implemented it recursively using Class 7 (IndirectConnections) to efficiently explore all possible paths.
+
+* Task 9 - Grouping Sentences with Shared Words
+We created a graph where each node represents a sentence, linking sentences that share enough words.
+DFS was used to find connected components, effectively grouping related sentences.

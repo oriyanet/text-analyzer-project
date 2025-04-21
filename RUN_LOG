@@ -1,0 +1,24 @@
+# 3:11
+# Measuring Runtime for Task 8
+powershell -command "Measure-Command { python main.py --task 8 --maxk 0 }"
+powershell -command "Measure-Command { python main.py --task 8 --maxk 1 }"
+powershell -command "Measure-Command { python main.py --task 8 --maxk 2 }"
+powershell -command "Measure-Command { python main.py --task 8 --maxk 3 }"
+powershell -command "Measure-Command { python main.py --task 8 --maxk 4 }"
+powershell -command "Measure-Command { python main.py --task 8 --maxk 5 }"
+
+
+# 3:38
+# Measuring Runtime for Task 9
+powershell -command "Measure-Command { python main.py --task 9 --threshold 0 }"
+powershell -command "Measure-Command { python main.py --task 9 --threshold 1 }"
+powershell -command "Measure-Command { python main.py --task 9 --threshold 2 }"
+powershell -command "Measure-Command { python main.py --task 9 --threshold 3 }"
+powershell -command "Measure-Command { python main.py --task 9 --threshold 4 }"
+powershell -command "Measure-Command { python main.py --task 9 --threshold 5 }"
+
+
+# 4:16
+# Running an Example for Task 9
+python main.py --task 9 --sentences sentences_small_2.csv --removewords REMOVEWORDS.csv --threshold 3
+
